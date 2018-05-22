@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/topBarBgColor" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布商品"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/title"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="商品名称"/>
+
+    <EditText
+        android:id="@+id/describe"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:gravity="left|top"
+        android:hint="商品描述...">
+    </EditText>
+
+    <GridView
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorWhite"
+        android:numColumns="5"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+
+    </GridView>
+
+    <EditText
+        android:id="@+id/price"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="商品价格"/>
+    <EditText
+        android:id="@+id/school"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="学校"/>
+
+    <EditText
+        android:id="@+id/province"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="所在市"/>
+    <EditText
+        android:id="@+id/first"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="第一分类"/>
+    <EditText
+        android:id="@+id/second"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="第二分类"/>
+
+    <TextView
+        android:id="@+id/publish"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:background="@color/red"
+        android:text="发布"
+        android:textColor="@drawable/text_while"
+        android:textSize="20sp" />
+</LinearLayout>
